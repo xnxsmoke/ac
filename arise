@@ -485,15 +485,7 @@ local Tabs = {
 
 -- Tạo mapping giữa các map và danh sách mob tương ứng
 local mobsByWorld = {
-    ["SoloWorld"] = {"Soondoo", "Gonshee", "Daek", "Longin", "Anders", "Largalgan"
-    ["KindamaCity"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
-    ["HurricaneTown"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
-    ["CursedHigh"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
-    ["NenCity"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
-    ["WorldArena"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
-    ["HuntersCity"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
-    ["SlayersVillage"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
-},
+    ["SoloWorld"] = {"Soondoo", "Gonshee", "Daek", "Longin", "Anders", "Largalgan"},
     ["NarutoWorld"] = {"Snake Man", "Blossom", "Black Crow"},
     ["OPWorld"] = {"Shark Man", "Eminel", "Light Admiral"},
     ["BleachWorld"] = {"Luryu", "Fyakuya", "Genji"},
@@ -502,6 +494,14 @@ local mobsByWorld = {
     ["JojoWorld"] = {"Diablo", "Gosuke", "Golyne"},
     ["DBWorld"] = {"Turtle", "Green", "Sky"},
     ["OPMWorld"] = {"Rider", "Cryborg", "Hurricane"}
+    ["KindamaCity"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
+    ["HurricaneTown"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
+    ["CursedHigh"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
+    ["NenCity"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
+    ["WorldArena"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
+    ["HuntersCity"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
+    ["SlayersVillage"] = {"Mob1", "Mob1 Brute", "Mob2", "Mob2 Brute", "Mob3", "Mob3 Brute"},
+
 }
 
 local selectedWorld = "SoloWorld" -- Default world
@@ -763,7 +763,7 @@ Tabs.tp:AddButton({
     Title = "XZ City"
 
 Tabs.tp:AddButton({
-    Title = "Kindama City",
+    Title = "KindamaCity",
     Description = "Set spawn & reset",
     Callback = function()
         SetSpawnAndReset("KindamaCity")
@@ -771,7 +771,7 @@ Tabs.tp:AddButton({
 })
 
 Tabs.tp:AddButton({
-    Title = "Hurricane Town",
+    Title = "HurricaneTown",
     Description = "Set spawn & reset",
     Callback = function()
         SetSpawnAndReset("HurricaneTown")
@@ -779,7 +779,7 @@ Tabs.tp:AddButton({
 })
 
 Tabs.tp:AddButton({
-    Title = "Cursed High",
+    Title = "CursedHigh",
     Description = "Set spawn & reset",
     Callback = function()
         SetSpawnAndReset("CursedHigh")
@@ -787,7 +787,7 @@ Tabs.tp:AddButton({
 })
 
 Tabs.tp:AddButton({
-    Title = "Nen City",
+    Title = "NenCity",
     Description = "Set spawn & reset",
     Callback = function()
         SetSpawnAndReset("NenCity")
@@ -795,7 +795,7 @@ Tabs.tp:AddButton({
 })
 
 Tabs.tp:AddButton({
-    Title = "World Arena",
+    Title = "WorldArena",
     Description = "Set spawn & reset",
     Callback = function()
         SetSpawnAndReset("WorldArena")
@@ -803,7 +803,7 @@ Tabs.tp:AddButton({
 })
 
 Tabs.tp:AddButton({
-    Title = "Hunters City",
+    Title = "HuntersCity",
     Description = "Set spawn & reset",
     Callback = function()
         SetSpawnAndReset("HuntersCity")
@@ -811,7 +811,7 @@ Tabs.tp:AddButton({
 })
 
 Tabs.tp:AddButton({
-    Title = "Slayers Village",
+    Title = "SlayersVillage",
     Description = "Set spawn & reset",
     Callback = function()
         SetSpawnAndReset("SlayersVillage")
